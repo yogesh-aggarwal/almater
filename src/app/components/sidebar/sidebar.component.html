@@ -1,4 +1,15 @@
 <div class="container">
-    Sidebar
-    <button></button>
+  <div class="logo"></div>
+  <div class="routes">
+    <a
+      class="route"
+      [ngClass]="{ active: route.route == currentRoute }"
+      [routerLink]="'/' + route.route"
+      *ngFor="let route of routes"
+    >
+      <i [class]="'las la-' + route.icon"></i>
+      <div class="name">{{ route.name }}</div>
+      <div class="active-indicator"></div>
+    </a>
+  </div>
 </div>

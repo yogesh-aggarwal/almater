@@ -29,7 +29,8 @@
             ],
             "styles": [
               "src/styles.scss",
-              "src/sdk.scss"
+              "src/sdk.scss",
+              "node_modules/line-awesome/dist/line-awesome/css/line-awesome.min.css"
             ],
             "scripts": []
           },

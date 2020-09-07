@@ -1,3 +1,58 @@
+@import "../../../theme";
+
 .container {
   background: #fff;
+
+  .routes {
+    .route {
+      display: flex;
+      align-items: center;
+      height: 3rem;
+      padding: 1rem 2rem;
+      position: relative;
+      text-decoration: none;
+      color: $primary-text;
+      cursor: pointer;
+      transition: all 0.3s ease-out;
+
+      i {
+        font-size: 1.5rem;
+      }
+      .name {
+        margin-left: 1rem;
+      }
+
+      .active-indicator {
+        position: absolute;
+        $width: 0.3rem;
+        width: $width;
+        height: 1.5rem;
+        top: 0.75rem;
+        right: -$width;
+        background: $primary;
+        border-radius: 0.2rem 0 0 0.2rem;
+        opacity: 0;
+        transition: all 0.3s ease-out;
+      }
+
+      &:hover {
+        background: $primary-hover;
+
+        .active-indicator {
+          opacity: 1;
+          right: 0;
+        }
+      }
+
+      &.active {
+        background: $primary-highlight;
+        cursor: default;
+
+        .active-indicator {
+          opacity: 1;
+          right: 0;
+        }
+      }
+    }
+  }
 }
