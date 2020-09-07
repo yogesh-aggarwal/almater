@@ -1,16 +1,18 @@
+@import "../theme";
+
 #root {
   height: 100%;
 
   .content {
     display: grid;
-    grid-template-columns: 15% auto;
+    grid-template-columns: $sidebar-width auto;
     height: 92%;
 
     #main {
       background: #f5f5fa;
       height: 100%;
       padding: 1rem 3rem;
-      overflow: scroll;
+      overflow: auto;
     }
   }
 }

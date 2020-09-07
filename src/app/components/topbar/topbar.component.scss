@@ -1,3 +1,15 @@
+@import "../../../theme";
+
 .container {
   height: 8%;
+
+  display: grid;
+  grid-template-columns: $sidebar-width auto;
+  align-items: center;
+
+  .logo {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
 }
