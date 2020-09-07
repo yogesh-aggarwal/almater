@@ -28,7 +28,8 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "src/sdk.scss"
             ],
             "scripts": []
           },
@@ -123,6 +124,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "almater"
+    }
+  },
+  "defaultProject": "almater",
+  "cli": {
+    "analytics": "8e993ef5-82f9-4c59-a907-e4768bb812d0"
+  }
 }

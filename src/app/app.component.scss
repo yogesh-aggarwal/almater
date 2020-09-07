@@ -1,0 +1,11 @@
+#root {
+  display: grid;
+  grid-template-columns: 15% auto;
+  height: 100%;
+
+  #main {
+    background: #f5f5fa;
+    height: 100%;
+    padding: 1rem 3rem;
+  }
+}
