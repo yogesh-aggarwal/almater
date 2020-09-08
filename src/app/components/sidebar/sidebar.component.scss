@@ -1,11 +1,13 @@
 @import "../../../theme";
 
+$logo-height: 5rem;
+
 .container {
   background: #fff;
   height: 100%;
 
   .logo {
-    height: 5rem;
+    height: $logo-height;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -23,7 +25,7 @@
   }
 
   .routes {
-    height: 100%;
+    height: calc(100% - #{$logo-height});
     display: flex;
     flex-direction: column;
     justify-content: space-between;

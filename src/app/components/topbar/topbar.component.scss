@@ -2,15 +2,42 @@
 
 .container {
   height: 5rem;
-  border: 1px solid $primary;
+  padding: 1rem 2rem;
 
   display: grid;
-  grid-template-columns: $sidebar-width auto;
+  grid-template-columns: auto 3rem;
   align-items: center;
 
-  .logo {
+  .main {
     display: flex;
-    justify-content: center;
-    align-content: center;
+    align-items: center;
+
+    .current-route {
+      font-weight: 600;
+      font-size: 2rem;
+      margin-right: 2rem;
+    }
+
+    .search {
+      background: #ebebed;
+      width: 25rem;
+      padding: 1rem 2rem;
+      border-radius: 0.5rem;
+
+      display: grid;
+      grid-template-columns: auto 1rem;
+      grid-column-gap: 1rem;
+      align-items: center;
+
+      input {
+        border: none;
+        background: inherit;
+        font-weight: 500;
+      }
+
+      i {
+        font-size: 1.2rem;
+      }
+    }
   }
 }
