@@ -4,40 +4,35 @@
   height: 5rem;
   padding: 1rem 2rem;
 
-  display: grid;
-  grid-template-columns: auto 3rem;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
 
-  .main {
-    display: flex;
+  .current-route {
+    font-weight: 600;
+    font-size: 2rem;
+    margin-right: 2rem;
+  }
+
+  .search {
+    background: #ebebed;
+    width: 100%;
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+
+    display: grid;
+    grid-template-columns: auto 1rem;
+    grid-column-gap: 1rem;
     align-items: center;
 
-    .current-route {
-      font-weight: 600;
-      font-size: 2rem;
-      margin-right: 2rem;
+    input {
+      border: none;
+      background: inherit;
+      font-weight: 500;
     }
 
-    .search {
-      background: #ebebed;
-      width: 25rem;
-      padding: 1rem 2rem;
-      border-radius: 0.5rem;
-
-      display: grid;
-      grid-template-columns: auto 1rem;
-      grid-column-gap: 1rem;
-      align-items: center;
-
-      input {
-        border: none;
-        background: inherit;
-        font-weight: 500;
-      }
-
-      i {
-        font-size: 1.2rem;
-      }
+    i {
+      font-size: 1.2rem;
     }
   }
 }
