@@ -14,10 +14,10 @@
 
       .routed {
         height: calc(100% - #{$topbar-height});
-        overflow: auto;
         padding: 1rem 3rem;
         background: $panel-main-background;
         backdrop-filter: $panel-backdrop;
+        overflow: auto;
       }
     }
   }

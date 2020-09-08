@@ -15,7 +15,7 @@ export class DataService {
   primaryRoutes: Array<RouteInterface> = [
     {
       name: "Dashboard",
-      icon: "home",
+      icon: "icons",
       route: "dashboard",
     },
     {
