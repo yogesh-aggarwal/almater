@@ -1,9 +1,12 @@
 <div id="root">
-  <topbar></topbar>
   <div class="content">
     <sidebar-component></sidebar-component>
     <main id="main">
-      <router-outlet></router-outlet>
+      <topbar></topbar>
+      <div class="routed">
+        <router-outlet></router-outlet>
+      </div>
     </main>
+    <glancebar-component></glancebar-component>
   </div>
 </div>

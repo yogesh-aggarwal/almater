@@ -5,14 +5,17 @@
 
   .content {
     display: grid;
-    grid-template-columns: $sidebar-width auto;
-    height: 92%;
+    grid-template-columns: $sidebar-width auto $sidebar-width;
+    height: 100%;
 
     #main {
       background: #f5f5fa;
       height: 100%;
-      padding: 1rem 3rem;
       overflow: auto;
+
+      .routed {
+        padding: 1rem 3rem;
+      }
     }
   }
 }
