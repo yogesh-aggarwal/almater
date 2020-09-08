@@ -11,7 +11,6 @@ export interface RouteInterface {
   providedIn: "root",
 })
 export class DataService {
-  currentRoute: RouteInterface;
   primaryRoutes: Array<RouteInterface> = [
     {
       name: "Dashboard",
@@ -66,6 +65,7 @@ export class DataService {
       route: "settings",
     },
   ];
+  currentRoute: RouteInterface = this.primaryRoutes[0];
 
   constructor(private router: Router) {}
 }
