@@ -1,0 +1,49 @@
+@import "../../../theme";
+
+.container {
+  background: $panel-background;
+  backdrop-filter: $panel-backdrop;
+  height: 100%;
+
+  .user {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 1rem 0;
+
+    .info {
+      margin-right: 1rem;
+
+      .name {
+        font-weight: 700;
+        font-size: 0.9rem;
+      }
+
+      .status {
+        display: flex;
+
+        .role {
+          font-size: 0.7rem;
+          font-weight: 600;
+        }
+
+        i {
+          margin-left: 0.5rem;
+
+          &.online {
+            color: $user-online;
+          }
+          &.offline {
+            color: $user-offline;
+          }
+        }
+      }
+    }
+
+    img {
+      border-radius: 25rem;
+      margin-right: 1rem;
+    }
+  }
+}

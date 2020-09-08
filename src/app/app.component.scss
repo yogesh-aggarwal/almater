@@ -9,12 +9,15 @@
     height: 100%;
 
     #main {
-      background: #f5f5fa;
       height: 100%;
       overflow: auto;
 
       .routed {
+        height: calc(100% - #{$topbar-height});
+        overflow: auto;
         padding: 1rem 3rem;
+        background: $panel-main-background;
+        backdrop-filter: $panel-backdrop;
       }
     }
   }
