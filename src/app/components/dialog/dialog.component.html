@@ -1,0 +1,12 @@
+<div class="container" [ngClass]="{ active: dialogService.isActive }">
+  <div class="backdrop" (click)="dialogService.isActive = false"></div>
+  <div class="dialog">
+    <div class="title">{{ dialogService.title }}</div>
+    <div class="content">{{ dialogService.content }}</div>
+    <div class="actions">
+      <div class="action" *ngFor="let action of dialogService.actions">
+        <button (click)="action.callback($event)">{{ action.name }}</button>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,49 @@
+@import "../../../theme";
+
+.container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1e5;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease-out;
+
+  &.active {
+    z-index: 1e5;
+  }
+
+  .backdrop {
+    background: $panel-background;
+    backdrop-filter: blur(3px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+
+  .dialog {
+    background: #fff;
+    border-radius: 1rem;
+    padding: 1rem 2rem;
+    z-index: 10;
+
+    .title {
+      font-size: 1.2rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+
+    .actions {
+      margin-top: 0.8rem;
+
+      display: flex;
+    }
+  }
+}

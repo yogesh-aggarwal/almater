@@ -16,6 +16,7 @@ import { SupportComponent } from "./routes/support/support.component";
 import { SettingsComponent } from "./routes/settings/settings.component";
 import { FeesManagementComponent } from "./routes/fees-management/fees-management.component";
 import { GlancebarComponent } from "./components/glancebar/glancebar.component";
+import { DialogComponent } from './components/dialog/dialog.component';
 
 @NgModule({
   declarations: [
@@ -33,6 +34,7 @@ import { GlancebarComponent } from "./components/glancebar/glancebar.component";
     SupportComponent,
     SettingsComponent,
     FeesManagementComponent,
+    DialogComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],

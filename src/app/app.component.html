@@ -1,9 +1,11 @@
+<dialog></dialog>
 <div id="root">
   <div class="content">
     <sidebar-component></sidebar-component>
     <main id="main">
       <topbar></topbar>
       <div class="routed">
+        <button (click)="open()">Open dialog</button>
         <router-outlet></router-outlet>
       </div>
     </main>
