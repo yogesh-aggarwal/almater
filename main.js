@@ -12,7 +12,7 @@ function loadWindow() {
       nodeIntegration: true,
     },
   });
-
+  win.title = "Almater";
   win.setMenuBarVisibility(false);
   win.loadURL(`http://localhost:4200`);
 

@@ -11,6 +11,10 @@ import { StaffManagementComponent } from './routes/staff-management/staff-manage
 import { MessagesComponent } from './routes/messages/messages.component';
 import { AdmissionsComponent } from './routes/admissions/admissions.component';
 import { CertificatesComponent } from './routes/certificates/certificates.component';
+import { ReportsComponent } from './routes/reports/reports.component';
+import { SupportComponent } from './routes/support/support.component';
+import { SettingsComponent } from './routes/settings/settings.component';
+import { FeesManagementComponent } from './routes/fees-management/fees-management.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +26,11 @@ import { CertificatesComponent } from './routes/certificates/certificates.compon
     StaffManagementComponent,
     MessagesComponent,
     AdmissionsComponent,
-    CertificatesComponent
+    CertificatesComponent,
+    ReportsComponent,
+    SupportComponent,
+    SettingsComponent,
+    FeesManagementComponent
   ],
   imports: [
     BrowserModule,

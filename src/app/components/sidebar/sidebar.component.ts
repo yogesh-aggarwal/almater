@@ -14,7 +14,7 @@ interface RouteInterface {
 })
 export class SidebarComponent implements OnInit {
   currentRoute: string = "";
-  routes: Array<RouteInterface> = [
+  primaryRoute: Array<RouteInterface> = [
     {
       name: "Dashboard",
       icon: "home",
@@ -31,6 +31,11 @@ export class SidebarComponent implements OnInit {
       route: "staff-management",
     },
     {
+      name: "Fees Management",
+      icon: "donate",
+      route: "fees-management",
+    },
+    {
       name: "Messages",
       icon: "comment",
       route: "messages",
@@ -44,6 +49,23 @@ export class SidebarComponent implements OnInit {
       name: "Certificates",
       icon: "certificate",
       route: "certificates",
+    },
+    {
+      name: "Reports",
+      icon: "newspaper",
+      route: "reports",
+    },
+  ];
+  secondaryRoute: Array<RouteInterface> = [
+    {
+      name: "Support",
+      icon: "donate",
+      route: "support",
+    },
+    {
+      name: "Settings",
+      icon: "cog",
+      route: "settings",
     },
   ];
 
