@@ -16,7 +16,11 @@ import { SupportComponent } from "./routes/support/support.component";
 import { SettingsComponent } from "./routes/settings/settings.component";
 import { FeesManagementComponent } from "./routes/fees-management/fees-management.component";
 import { GlancebarComponent } from "./components/glancebar/glancebar.component";
-import { DialogComponent } from './components/dialog/dialog.component';
+import { DialogComponent } from "./components/dialog/dialog.component";
+
+import { AngularFirestoreModule, SETTINGS } from "@angular/fire/firestore";
+import { environment } from "src/environments/environment.prod";
+import { AngularFireModule } from "@angular/fire";
 
 @NgModule({
   declarations: [
@@ -36,7 +40,12 @@ import { DialogComponent } from './components/dialog/dialog.component';
     FeesManagementComponent,
     DialogComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    AngularFireModule.initializeApp(environment.firebaseConfig),
+    AngularFirestoreModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })

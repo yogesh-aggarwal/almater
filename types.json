@@ -1,0 +1,29 @@
+{
+    "guardian": {
+        "name": "String",
+        "qualification": "String",
+        "gender": [
+            "MALE",
+            "FEMALE"
+        ],
+        "isHandicapped": "Bool"
+    },
+    "student": {
+        "_id": "Internal ID",
+        "name": "String",
+        "guardians": {
+            "father": "guardian"
+        },
+        "isHandicapped": "Bool",
+        "isWithSpecialNeeds": "Bool",
+        "religio": "String",
+        "category": [
+            "GENERAL",
+            "SC",
+            "ST",
+            "OBC",
+            "OTHERS"
+        ],
+        "rfIdNumber": "String"
+    }
+}

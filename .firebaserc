@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "almater": {
+      "hosting": {
+        "almater": [
+          "almater"
+        ]
+      }
+    }
+  }
+}

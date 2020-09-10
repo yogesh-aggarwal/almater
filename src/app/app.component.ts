@@ -1,5 +1,6 @@
 import { Component, OnInit } from "@angular/core";
 import { DialogService } from "./services/dialog.service";
+import { AngularFirestore } from "@angular/fire/firestore";
 
 @Component({
   selector: "app-root",
@@ -21,7 +22,5 @@ export class AppComponent implements OnInit {
     ]);
   }
 
-  ngOnInit(): void {
-    
-  }
+  ngOnInit() {}
 }
