@@ -6,10 +6,12 @@
             "MALE",
             "FEMALE"
         ],
-        "isHandicapped": "Bool"
+        "isHandicapped": "Bool",
+        "aadharCard": "Int"
     },
     "student": {
         "_id": "Internal ID",
+        "rollNo": "String",
         "name": "String",
         "guardians": {
             "father": "guardian"
@@ -24,6 +26,13 @@
             "OBC",
             "OTHERS"
         ],
-        "rfIdNumber": "String"
+        "rfIdNumber": "String",
+        "dob": "Date",
+        "house": [
+            "ALL HOUSES"
+        ],
+        "aadharCard": "Int",
+        "familyId": "String",
+        "childId": "String"
     }
 }
